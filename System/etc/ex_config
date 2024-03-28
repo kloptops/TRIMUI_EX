@@ -1,0 +1,5 @@
+#!/bin/sh
+
+export PATH="/mnt/SDCARD/System/bin:$PATH"
+export LD_LIBRARY_PATH="/mnt/SDCARD/System/lib:$LD_LIBRARY_PATH"
+export EX_CONFIG_PATH="/mnt/SDCARD/System/etc"
