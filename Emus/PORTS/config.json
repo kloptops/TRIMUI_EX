@@ -1,0 +1,12 @@
+{
+"label":"PORTS",
+"background":"bg.png",
+"themecolor":"FFFF88",
+"launch":"launch.sh",
+"rompath":"../../Roms/PORTS",
+"imgpath":"../../Imgs/PORTS",
+"useswap":1,
+"shortname":0,
+"hidebios":1,
+"extlist":"sh"
+}

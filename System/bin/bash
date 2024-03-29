@@ -1,0 +1,4 @@
+#!/bin/sh
+# Intercept calls to /bin/bash and execute /bin/ash instead
+
+/bin/ash "$@"

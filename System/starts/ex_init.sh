@@ -2,6 +2,16 @@
 
 source /mnt/SDCARD/System/etc/ex_config
 
+if [ ! -f "/etc/ssl/certs/ca-certificates.crt" ]; then
+    mkdir -p /etc/ssl/certs/
+    cp /mnt/SDCARD/System/etc/ca-certificates.crt 
+fi
+
+if [ ! -f "/bin/bash" ]; then
+    cp /mnt/SDCARD/System/bin/bash /bin/bash
+    chmod +x /bin/bash
+fi
+
 if [[ "$NETWORK_FIX" == "Y" ]]; then
 
     if [ ! -f "$EX_CONFIG_PATH/mac_addr.conf" ]; then
