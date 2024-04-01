@@ -2,13 +2,22 @@
 
 This is a simple framework that will be used to bootstrap PortMaster.
 
-# TODO
+# This kinda got out of hand.
 
-- [x] ssh/dropbear
-- [ ] python3
-- [ ] wget
+The latest trimui beta firmware (which is required for PortMaster) has an extremely limited busybox install, I have replaced it with the latest version with most of the features enabled.
+
+# Things included and working:
+
+- [x] bash\*
+- [x] nano
+- [x] pkill
+- [x] python3
 - [ ] scp
-- [ ] pkill
+- [x] ssh/dropbear
+- [x] wget
+- [x] zip
+
+\* Not actually bash, but is busybox `ash`, but it aliases correctly and mostly works.
 
 # Thanks
 

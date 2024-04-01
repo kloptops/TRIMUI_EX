@@ -20,16 +20,16 @@ if [[ "$NETWORK_FIX" == "Y" ]]; then
     ## MAC ADDRESS STUFF FROM: https://github.com/tGecko/TrimUI-Smart-Pro-resources?tab=readme-ov-file#startup-script
 
     ## Force a decent macaddr
-ifconfig wlan0 down
-ifconfig wlan0 hw ether "$MAC_ADDR"
-ifconfig wlan0 up
+    ifconfig wlan0 down
+    ifconfig wlan0 hw ether "$MAC_ADDR"
+    ifconfig wlan0 up
 fi
 
 if [[ "$NETWORK_SSH" == "Y" ]]; then
     mkdir -p /etc/dropbear
 
     # Currently broken
-    # dropbear -R
+    dropbear -R
 fi
 
 /mnt/SDCARD/System/bin/ex_update.sh
