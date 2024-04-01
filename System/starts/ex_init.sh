@@ -2,15 +2,7 @@
 
 source /mnt/SDCARD/System/etc/ex_config
 
-if [ ! -f "/etc/ssl/certs/ca-certificates.crt" ]; then
-    mkdir -p /etc/ssl/certs/
-    cp /mnt/SDCARD/System/etc/ca-certificates.crt 
-fi
-
-if [ ! -f "/bin/bash" ]; then
-    cp /mnt/SDCARD/System/bin/bash /bin/bash
-    chmod +x /bin/bash
-fi
+/mnt/SDCARD/System/bin/ex_update.sh
 
 if [[ "$NETWORK_FIX" == "Y" ]]; then
 
@@ -38,5 +30,6 @@ fi
 if [[ "$NETWORK_SSH" == "Y" ]]; then
     mkdir -p /etc/dropbear
 
-    dropbear -R
+    # Currently broken
+    # dropbear -R
 fi
