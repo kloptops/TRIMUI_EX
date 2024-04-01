@@ -6,3 +6,4 @@ export EX_CONFIG_PATH="/mnt/SDCARD/System/etc"
 
 export NETWORK_FIX="Y"
 export NETWORK_SSH="Y"
+export NETWORK_SFTPGO="Y"
