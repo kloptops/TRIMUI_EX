@@ -19,7 +19,7 @@ Then download and **unzip** the [TRIMUI_EX.zip](https://github.com/kloptops/TRIM
 
 We need to flash a fresh firmware, I am going to fuck shit up to make it better.
 
-**HOLD POWER + VOL DOWN** until you see the logo, release **POWER**, when you see the green progress bar release **VOL DOWN**.
+With the device off, **HOLD POWER + VOL DOWN** until you see the logo, release **POWER**, when you see the green progress bar release **VOL DOWN**.
 
 This will flash fresh firmware. Your device will boot and then it will hopefully show a fancy splash screen. This is my scripts doing its magic. Eventually it will turn on and everything is setup.
 
