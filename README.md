@@ -44,7 +44,7 @@ I have then included my own compiled version of python 3.11.8, and various progr
 
 ## Who can use this?
 
-Anyone can, please cut up and use whatever you want or need. I however will provide no support outside of [PortMaster](https://discord.gg/SbVcUM4qFp).
+Anyone can, please cut up and use whatever you want or need. I however will provide no support outside of [PortMaster](https://portmaster.games/).
 
 # Things included and working:
 
