@@ -6,6 +6,8 @@ This is a simple framework that will be used to bootstrap PortMaster.
 
 ### With a blank fat32 formatted sdcard copy:
 
+***No seriously, a blank one. I mean it.***
+
 - TrimUI Firmware: [trimui_tg5040.awimg](https://github.com/trimui/firmware_smartpro/releases/tag/v1.0.4) _Download trimui_tg5040_20240401_v1.0.4.7z_
 - PortMaster TrimUI Beta: [trimui.portmaster.zip](https://github.com/kloptops/TRIMUI_EX/releases/latest/download/trimui.portmaster.zip)
 
