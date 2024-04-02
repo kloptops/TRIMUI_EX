@@ -36,6 +36,10 @@ The device will keep it's mac address too so you can give it a static ip address
 
 You can check PortMaster under options for your devices IP Address (on the default theme).
 
+----
+
+If you enjoy this [send me a few dollars](https://ko-fi.com/kloptops/) or consider donating to [PortMaster's open collective](https://opencollective.com/portmaster/) which helps us buy devices like the TrimUI Smart Pro for development.
+
 ## How this works:
 
 I have provided my own updated version of busybox, I then link any busybox applets that are missing to `/usr/bin`. We then link `/usr/trimui/lib/libSDL*` to `/usr/lib`, so that regular programs can find it.
