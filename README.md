@@ -8,10 +8,12 @@ This is a simple framework that will be used to bootstrap PortMaster.
 
 ***No seriously, a blank one. I mean it.***
 
+Copy the following to the root of the blank sdcard:
+
 - TrimUI Firmware: [trimui_tg5040.awimg](https://github.com/trimui/firmware_smartpro/releases/tag/v1.0.4) _Download trimui_tg5040_20240401_v1.0.4.7z_
 - PortMaster TrimUI Beta: [trimui.portmaster.zip](https://github.com/kloptops/TRIMUI_EX/releases/latest/download/trimui.portmaster.zip)
 
-Then download and unzip the [TRIMUI_EX.zip](https://github.com/kloptops/TRIMUI_EX/releases/latest/download/TRIMUI_EX.zip) to the root of the sdcard.
+Then download and **unzip** the [TRIMUI_EX.zip](https://github.com/kloptops/TRIMUI_EX/releases/latest/download/TRIMUI_EX.zip) to the root of the sdcard.
 
 ### Start your device:
 
