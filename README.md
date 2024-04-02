@@ -70,4 +70,5 @@ Thanks to:
 - [tGecko](https://github.com/tGecko/TrimUI-Smart-Pro-resources?tab=readme-ov-file#startup-script) with their guide to the startup scripts and setting the mac address.
 - [Cebion](https://github.com/cebion) for testing everything.
 - [Tech Toy Tinker](https://techtoytinker.com) for helping out with the device and testing.
+- [Sleepy](https://www.youtube.com/@S1eepy1) for pointing out the device and help with funding dev devices :heart:.
 - [PortMaster](https://discord.gg/SbVcUM4qFp) - The whole crew for being so awesome and supportive.
