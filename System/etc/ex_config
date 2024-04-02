@@ -3,7 +3,11 @@
 export PATH="/mnt/SDCARD/System/bin:$PATH"
 export LD_LIBRARY_PATH="/mnt/SDCARD/System/lib:/usr/trimui/lib:$LD_LIBRARY_PATH"
 export EX_CONFIG_PATH="/mnt/SDCARD/System/etc"
+export EX_RESOURCE_PATH="/mnt/SDCARD/System/resources"
 
 export NETWORK_FIX="Y"
 export NETWORK_SSH="Y"
 export NETWORK_SFTPGO="Y"
+
+# Override the above options in the file below
+[ -f "$EX_CONFIG_PATH/ex_options" ] && source "$EX_CONFIG_PATH/ex_options"

@@ -9,6 +9,13 @@ if [ -f "/etc/ex_update/$UPDATE_ID" ]; then
     exit 0
 fi
 
+sdl2imgshow \
+    -i "$EX_RESOURCE_PATH/background.png" \
+    -f "$EX_RESOURCE_PATH/DejaVuSans.ttf" \
+    -s 48 \
+    -c "0,0,0" \
+    -t "Installing TIMUI_EX" &
+
 echo "--------------------------------------------"
 echo "Running $0"
 echo "- $UPDATE_DIR"
@@ -24,6 +31,8 @@ cp -vf "$UPDATE_DIR/ca-certificates.crt" /etc/ssl/certs/
 cp -vf /bin/busybox /bin/busybox.bak
 cp -vf "$UPDATE_DIR/busybox" /bin/busybox
 
+ln -vs "/bin/busybox" "/bin/bash"
+
 # Create missing busybox commands
 for cmd in $(busybox --list); do
     # Skip if command already exists or if it's not suitable for linking
@@ -35,8 +44,20 @@ for cmd in $(busybox --list); do
     ln -vs "/bin/busybox" "/usr/bin/$cmd"
 done
 
+# Fix weird libSDL location
+for libname in /usr/trimui/lib/libSDL*; do
+    linkname="/usr/lib/$(basename "$libname")"
+    if [ -e "$linkname" ]; then
+        continue
+    fi
+    ln -vs "$libname" "$linkname"
+done
+
+# Unzip python
 unzip -o -d "/mnt/SDCARD/System/" "$UPDATE_DIR/python.zip" > /mnt/SDCARD/System/updates/python.log
 
 # FOOTER
+pkill -f sdl2imgshow
+
 echo "Done!"
 touch "/etc/ex_update/$UPDATE_ID"
