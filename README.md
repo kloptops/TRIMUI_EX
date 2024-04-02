@@ -2,9 +2,47 @@
 
 This is a simple framework that will be used to bootstrap PortMaster.
 
-# This kinda got out of hand.
+## Installation Instructions
 
-The latest trimui beta firmware (which is required for PortMaster) has an extremely limited busybox install, I have replaced it with the latest version with most of the features enabled.
+### With a blank fat32 formatted sdcard copy:
+
+- TrimUI Firmware: [trimui_tg5040.awimg](https://github.com/trimui/firmware_smartpro/releases/tag/v1.0.4) _Download trimui_tg5040_20240401_v1.0.4.7z_
+- PortMaster TrimUI Beta: [trimui.portmaster.zip](https://github.com/kloptops/TRIMUI_EX/releases/latest/download/trimui.portmaster.zip)
+
+Then download and unzip the [TRIMUI_EX.zip](https://github.com/kloptops/TRIMUI_EX/releases/latest/download/TRIMUI_EX.zip) to the root of the sdcard.
+
+### Start your device:
+
+We need to flash a fresh firmware, I am going to fuck shit up to make it better.
+
+**HOLD POWER + VOL DOWN** until you see the logo, release **POWER**, when you see the green progress bar release **VOL DOWN**.
+
+This will flash fresh firmware. Your device will boot and then it will hopefully show a fancy splash screen. This is my scripts doing its magic. Eventually it will turn on and everything is setup.
+
+This process can take a minute or two. :smile:
+
+### Enjoy
+
+From there it should be all setup, PortMaster is under apps, Ports get installed into Roms.
+
+I have added SFTPgo so you can access your files from the web browser, the url is `http://<ipaddress>:8080/`
+
+Username: `trimui`
+Password: `trimui`
+
+The device will keep it's mac address too so you can give it a static ip address.
+
+You can check PortMaster under options for your devices IP Address (on the default theme).
+
+## How this works:
+
+I have provided my own updated version of busybox, I then link any busybox applets that are missing to `/usr/bin`. We then link `/usr/trimui/lib/libSDL*` to `/usr/lib`, so that regular programs can find it.
+
+I have then included my own compiled version of python 3.11.8, and various programs that PortMaster scripts require.
+
+## Who can use this?
+
+Anyone can, please cut up and use whatever you want or need. I however will provide no support outside of [PortMaster](https://discord.gg/SbVcUM4qFp).
 
 # Things included and working:
 
@@ -13,7 +51,7 @@ The latest trimui beta firmware (which is required for PortMaster) has an extrem
 - [x] pkill
 - [x] python3
 - [ ] scp
-- [x] ssh/dropbear
+- [ ] ssh/dropbear
 - [x] wget
 - [x] zip
 
@@ -21,4 +59,9 @@ The latest trimui beta firmware (which is required for PortMaster) has an extrem
 
 # Thanks
 
-Thanks to [tGecko](https://github.com/tGecko/TrimUI-Smart-Pro-resources?tab=readme-ov-file#startup-script) with their guide to the startup scripts and setting the mac address.
+Thanks to:
+
+- [tGecko](https://github.com/tGecko/TrimUI-Smart-Pro-resources?tab=readme-ov-file#startup-script) with their guide to the startup scripts and setting the mac address.
+- [Cebion](https://github.com/cebion) for testing everything.
+- [Tech Toy Tinker](https://techtoytinker.com) for helping out with the device and testing.
+- [PortMaster](https://discord.gg/SbVcUM4qFp) - The whole crew for being so awesome and supportive.
