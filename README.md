@@ -29,8 +29,8 @@ From there it should be all setup, PortMaster is under apps, Ports get installed
 
 I have added SFTPgo so you can access your files from the web browser, the url is `http://<ipaddress>:8080/`
 
-Username: `trimui`
-Password: `trimui`
+- Username: `trimui`
+- Password: `trimui`
 
 The device will keep it's mac address too so you can give it a static ip address.
 
