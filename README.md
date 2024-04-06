@@ -29,10 +29,14 @@ This process can take a minute or two. :smile:
 
 From there it should be all setup, PortMaster is under apps, Ports get installed into Roms.
 
-I have added SFTPgo so you can access your files from the web browser, the url is `http://<ipaddress>:8080/`
+I have added SFTPgo so you can access your files from the web browser, the url is `http://<ipaddress>:8080/`, you can also sftp on port `2022`.
 
 - Username: `trimui`
 - Password: `trimui`
+
+We now have working scp (via /usr/libexec/sftp-server) so you can also do:
+
+`scp <filehere> root@<ipaddress>:` the password will be `tina` (not my choice)
 
 The device will keep it's mac address too so you can give it a static ip address.
 
@@ -58,8 +62,8 @@ Anyone can, please cut up and use whatever you want or need. I however will prov
 - [x] nano
 - [x] pkill
 - [x] python3
-- [ ] scp
-- [ ] ssh/dropbear
+- [x] scp/sftp
+- [x] ssh/dropbear
 - [x] wget
 - [x] zip
 
@@ -70,6 +74,7 @@ Anyone can, please cut up and use whatever you want or need. I however will prov
 Thanks to:
 
 - [tGecko](https://github.com/tGecko/TrimUI-Smart-Pro-resources?tab=readme-ov-file#startup-script) with their guide to the startup scripts and setting the mac address.
+- `@_xk_` on the RGH discord for [their compiled version of dropbear](https://discord.com/channels/529983248114122762/1054333456928219167/1174827982406299768)
 - [Cebion](https://github.com/cebion) for testing everything.
 - [Tech Toy Tinker](https://techtoytinker.com) for helping out with the device and testing.
 - [Sleepy](https://www.youtube.com/@S1eepy1) for pointing out the device and help with funding dev devices :heart:.

@@ -31,7 +31,7 @@ if [[ "$NETWORK_SSH" == "Y" ]]; then
     mkdir -p /etc/dropbear
 
     # Currently broken
-    # dropbear -R
+    nice -2 dropbear -R
 fi
 
 if [[ "$NETWORK_SFTPGO" == "Y" ]]; then

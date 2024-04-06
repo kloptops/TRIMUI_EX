@@ -1,10 +1,10 @@
 {
 "label":"PORTS",
-"icon":"ports.png",
+"icon":"icon.png",
 "iconsmall":"",
 "iconlist":"",
 "background":"",
-"themecolor":"00FF00",
+"themecolor":"61A8DD",
 "launch":"launch.sh",
 "rompath":"../../Roms/PORTS",
 "imgpath":"../../Imgs/PORTS",
