@@ -25,7 +25,11 @@ This will flash fresh firmware. Your device will boot and then it will hopefully
 
 This process can take a minute or two. :smile:
 
-### Enjoy
+## Update Instructions
+
+Download the latest [TRIMUI_EX.zip](https://github.com/kloptops/TRIMUI_EX/releases/latest/download/TRIMUI_EX.zip) and unzip it over the existing contents on your SDCAARD. It should just work.
+
+## Enjoy
 
 From there it should be all setup, PortMaster is under apps, Ports get installed into Roms.
 

@@ -27,6 +27,8 @@ if [[ "$NETWORK_FIX" == "Y" ]]; then
     ifconfig wlan0 up
 fi
 
+/mnt/SDCARD/System/bin/ex_update.sh
+
 if [[ "$NETWORK_SSH" == "Y" ]]; then
     mkdir -p /etc/dropbear
 
@@ -39,5 +41,3 @@ if [[ "$NETWORK_SFTPGO" == "Y" ]]; then
 
     nice -2 /mnt/SDCARD/System/sftpgo/sftpgo serve -c /mnt/SDCARD/System/sftpgo/ > /dev/null &
 fi
-
-/mnt/SDCARD/System/bin/ex_update.sh

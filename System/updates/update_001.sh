@@ -14,7 +14,7 @@ sdl2imgshow \
     -f "$EX_RESOURCE_PATH/DejaVuSans.ttf" \
     -s 48 \
     -c "0,0,0" \
-    -t "Installing TIMUI_EX $UPDATE_ID" &
+    -t "Installing TRIMUI_EX $UPDATE_ID" &
 
 echo "--------------------------------------------"
 echo "Running $0"
