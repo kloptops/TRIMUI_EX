@@ -1,6 +1,6 @@
-# TRIMUI EX
+# TRIMUI_EX
 
-This is a simple framework that will be used to bootstrap PortMaster.
+This is a simple framework that will be used to bootstrap PortMaster. But like everything it has spiraled out of control...
 
 ## Installation Instructions
 
@@ -10,10 +10,22 @@ This is a simple framework that will be used to bootstrap PortMaster.
 
 Copy the following to the root of the blank sdcard:
 
-- TrimUI Firmware: [trimui_tg5040.awimg](https://github.com/trimui/firmware_smartpro/releases/tag/v1.0.4) _Download trimui_tg5040_20240401_v1.0.4.7z_
-- PortMaster TrimUI Beta: [trimui.portmaster.zip](https://github.com/kloptops/TRIMUI_EX/releases/latest/download/trimui.portmaster.zip)
+- TrimUI Firmware: [trimui_tg5040.awimg](https://github.com/trimui/firmware_smartpro/releases/tag/v1.0.4): Download trimui_tg5040_20240401_v1.0.4.7z and extract `trimui_tg5040.awimg` and place it at the root of sdcard.
+- PortMaster TrimUI Beta: [trimui.portmaster.zip](https://github.com/kloptops/TRIMUI_EX/releases/latest/download/trimui.portmaster.zip), place it simply in the root of the sdcard. Do not unzip.
 
 Then download and **unzip** the [TRIMUI_EX.zip](https://github.com/kloptops/TRIMUI_EX/releases/latest/download/TRIMUI_EX.zip) to the root of the sdcard.
+
+Your SDCARD should look like this:
+
+```
+SDCARD/
+├── Emus/
+├── Imgs/
+├── Roms/
+├── System/
+├── trimui_tg5040.awimg
+└── trimui.portmaster.zip
+```
 
 ### Start your device:
 
@@ -72,6 +84,21 @@ Anyone can, please cut up and use whatever you want or need. I however will prov
 - [x] zip
 
 \* Not actually bash, but is busybox `ash`, but it aliases correctly and mostly works.
+
+# Projects used:
+
+- [busybox](https://busybox.net)
+- [dropbear for ssh](https://sftpgo.comhttps://matt.ucc.asn.au/dropbear/dropbear.html)
+- [greenend sftp server for scp](https://www.greenend.org.uk/rjk/sftpserver/)
+- [ldd](https://github.com/lattera/glibc/blob/master/elf/ldd.bash.in)
+- [micro](https://micro-editor.github.io)
+- [nano](https://www.nano-editor.org)
+- [python3](https://www.python.org)
+- [sdl2imgshow for displaying splashscreens](https://github.com/kloptops/sdl2imgshow)
+- [sftpgo for sftp/webserver](https://sftpgo.com)
+- [wget](https://www.gnu.org/software/wget/)
+- [xz](https://github.com/kobolabs/liblzma)
+- [zip](https://infozip.sourceforge.net)
 
 # Thanks
 
