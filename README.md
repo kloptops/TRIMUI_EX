@@ -89,6 +89,7 @@ Anyone can, please cut up and use whatever you want or need. I however will prov
 
 - [busybox](https://busybox.net)
 - [dropbear for ssh](https://sftpgo.comhttps://matt.ucc.asn.au/dropbear/dropbear.html)
+- [graphicsmagick](http://www.graphicsmagick.org)
 - [greenend sftp server for scp](https://www.greenend.org.uk/rjk/sftpserver/)
 - [ldd](https://github.com/lattera/glibc/blob/master/elf/ldd.bash.in)
 - [micro](https://micro-editor.github.io)
