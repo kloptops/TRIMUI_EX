@@ -111,3 +111,30 @@ Thanks to:
 - [Tech Toy Tinker](https://techtoytinker.com) for helping out with the device and testing.
 - [Sleepy](https://www.youtube.com/@S1eepy1) for pointing out the device and help with funding dev devices :heart:.
 - [PortMaster](https://discord.gg/SbVcUM4qFp) - The whole crew for being so awesome and supportive.
+
+
+
+
+Another fairly big update to PortMaster on TrimUI, we now have optional support for the Ports tab.
+
+## Changes:
+
+- Port files are moved to `Data/ports`
+- Ports can either live in `Roms/PORTS/` or `Apps/`.
+- Autoinstall now works, place port zips into `Apps/PortMaster/PortMaster/autoinstall` and it will install them correctly.
+
+## `Ports tab` vs `Roms section`
+
+You can swap back and forth whenever you like, PortMaster will do the magic necessary to move everything back. In PortMaster go to `Options` -> `Ports Location:` to toggle the location.
+
+## Small bug
+
+PortMaster will ask to update, in older versions you have press "b" to accept the update, this makes appear like the program isnt updating.
+
+## Updating
+
+PortMaster should just update by itself, but `TRIMUI_EX` has been updated to `v0.0.2c`, it includes a few extra libs and `gdb`. Download the latest [TRIMUI_EX.zip](https://github.com/kloptops/TRIMUI_EX/releases/latest/download/TRIMUI_EX.zip) here and unzip it over your install on the SDCARD.
+
+## Installing
+
+For full installation instructions head here: https://github.com/kloptops/TRIMUI_EX/
