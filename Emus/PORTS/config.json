@@ -14,6 +14,10 @@
     "extlist":"sh",
     "launchlist": [
         {
+            "name": "Ultra Battery Saver",
+            "launch": "launch_ultrabatterysaver.sh"
+        },
+        {
             "name": "Battery Saver",
             "launch": "launch_batterysaver.sh"
         },
