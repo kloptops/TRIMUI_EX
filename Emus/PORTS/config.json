@@ -15,15 +15,15 @@
     "launchlist": [
         {
             "name": "Battery Saver",
-            "launch": "launch_batterysaver.sh"
+            "launch": "launch.sh"
         },
         {
             "name": "Balanced",
-            "launch": "launch_balanced.sh"
+            "launch": "launch.sh"
         },
         {
             "name": "High Performance",
-            "launch": "launch_performance.sh"
+            "launch": "launch.sh"
         }
     ]
 }
