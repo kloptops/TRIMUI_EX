@@ -10,8 +10,12 @@ This is a simple framework that will be used to bootstrap PortMaster. But like e
 
 Copy the following to the root of the blank sdcard:
 
-- TrimUI Firmware: [trimui_tg5040.awimg](https://github.com/trimui/firmware_smartpro/releases/tag/v1.0.4): Download trimui_tg5040_20240401_v1.0.4.7z and extract `trimui_tg5040.awimg` and place it at the root of sdcard.
-- PortMaster TrimUI Beta: [trimui.portmaster.zip](https://github.com/kloptops/TRIMUI_EX/releases/latest/download/trimui.portmaster.zip), place it simply in the root of the sdcard. Do not unzip.
+- Download latest TrimUI **Smart Pro** Firmware: [trimui_tg5040.awimg](https://github.com/trimui/firmware_smartpro/releases/latest/): Download `trimui_tg5040_20240413_v1.0.4_hotfix6.7z` and extract `trimui_tg5040.awimg` and place it at the root of sdcard.
+- **OR*** Download latest TrimUI **Brick** Firmware: [trimui_](https://github.com/trimui/firmware_brick/releases/latest/): Download `firmware_BRICK_tg3040_20241215_v1.0.6.zip` and extract `trimui_tg3040.awimg` and place it at the root of the sdcard.
+
+The above filenames may change as newer firmware is released.
+
+- PortMaster TrimUI Release: [trimui.portmaster.zip](https://github.com/PortsMaster/PortMaster-GUI/releases/latest/download/trimui.portmaster.zip), place it simply in the root of the sdcard. Do not unzip.
 
 Then download and **unzip** the [TRIMUI_EX.zip](https://github.com/kloptops/TRIMUI_EX/releases/latest/download/TRIMUI_EX.zip) to the root of the sdcard.
 
@@ -23,13 +27,13 @@ SDCARD/
 ├── Imgs/
 ├── Roms/
 ├── System/
-├── trimui_tg5040.awimg
+├── trimui_tg????.awimg    -- actual name depends on device / version
 └── trimui.portmaster.zip
 ```
 
 ### Start your device:
 
-We need to flash a fresh firmware, I am going to fuck shit up to make it better.
+We need to flash a fresh firmware, I am going to reset everything to make it better.
 
 With the device off, **HOLD POWER + VOL DOWN** until you see the logo, release **POWER**, when you see the green progress bar release **VOL DOWN**.
 
